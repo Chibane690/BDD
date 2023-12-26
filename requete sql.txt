@@ -1,0 +1,305 @@
+INSERT INTO equipe_nationale (nom_equipe_national) VALUES
+    ('États-Unis'),
+    ('Espagne'),
+    ('France'),
+    ('Canada'),
+    ('Brésil'),
+    ('Argentine'),
+    ('Australie'),
+    ('Allemagne'),
+    ('Italie'),
+    ('Grèce');
+
+INSERT INTO nationnalite (nom_nationnalite, Pay) VALUES
+    ('Américaine', 'États-Unis'),
+    ('Espagnole', 'Espagne'),
+    ('Française', 'France'),
+    ('Canadienne', 'Canada'),
+    ('Brésilienne', 'Brésil'),
+    ('Argentine', 'Argentine'),
+    ('Australienne', 'Australie'),
+    ('Allemande', 'Allemagne'),
+    ('Italienne', 'Italie'),
+    ('Grecque', 'Grèce');
+
+INSERT INTO Ligue (annee, saison, type_ligue) VALUES
+    (2023, '2023-2024', 'NBA'),
+    (2023, '2023-2024', 'EuroLeague'),
+    (2022, '2022-2023', 'NBA'),
+    (2022, '2022-2023', 'EuroLeague'),
+    (2021, '2021-2022','NBA' ),
+    (2021, '2021-2022', 'EuroLeague'),
+    (2020, '2020-2021','NBA' );
+INSERT INTO Club (nom_club, ville) VALUES
+    ('Los Angeles Lakers', 'Los Angeles'),
+    ('Golden State Warriors', 'San Francisco'),
+    ('Brooklyn Nets', 'Brooklyn'),
+    ('Chicago Bulls', 'Chicago'),
+    ('Miami Heat', 'Miami'),
+    ('Dallas Mavericks', 'Dallas'),
+    ('Boston Celtics', 'Boston'),
+    ('Toronto Raptors', 'Toronto'),
+    ('Houston Rockets', 'Houston'),
+    ('Philadelphia 76ers', 'Philadelphia'),
+    ('Real Madrid Baloncesto', 'Madrid'),
+    ('FC Barcelona Bàsquet', 'Barcelone'),
+    ('CSKA Moscow', 'Moscou'),
+    ('Panathinaikos BC', 'Athènes'),
+    ('Fenerbahçe Basketbol', 'Istanbul');
+INSERT INTO Coupe (annee, phase, type_Coupe) VALUES
+    ('2023', 'Groupe', 'Championnat'),
+    ('2023', 'Finale', 'Championnat'),
+    ('2021', 'Groupe', 'Championnat'),
+    ('2021', 'Finale', 'Championnat'),
+    ('2019', 'Finale', 'Championnat'),
+    ('2019', 'Groupe', 'Championnat'),
+    ('2022', 'Finale', 'Coupe du monde'),
+    ('2022', 'Quarts de finale', 'Coupe du monde'),  
+    ('2022', 'Huitièmes de finale', 'Coupe du monde'),   
+    ('2022', 'Demi-finales', 'Coupe du monde'),
+    ('2018', 'Groupe', 'Coupe du monde'),
+    ('2018', 'Finale', 'Coupe du monde'),
+    ('2018', 'Quarts de finale', 'Coupe du monde'),  
+    ('2018', 'Huitièmes de finale', 'Coupe du monde'),   
+    ('2018', 'Demi-finales', 'Coupe du monde'),
+    ('2018', 'Groupe', 'Coupe du monde');
+
+INSERT INTO Sponsor (nom_sponsor, montant, ville) VALUES
+    ('ABC Company', 50000, 'New York'),
+    ('XYZ Corporation', 75000, 'Los Angeles'),
+    ('Global Enterprises', 100000, 'London'),
+    ('Future Innovations', 60000, 'Paris'),
+    ('Tech Solutions Ltd.', 90000, 'Tokyo'),
+    ('Prime Investments', 85000, 'Berlin'),
+    ('Innovate Co.', 72000, 'Sydney'),
+    ('NexGen Corporation', 55000, 'Shanghai'),
+    ('Eminent Holdings', 80000, 'Dubai'),
+    ('Ace Partners', 95000, 'Singapore');
+
+INSERT INTO sponsor_equipe_nationale (sponsors_id, equipe_nationales_id) 
+VALUES 
+    (FLOOR(RAND() * 10) +1, FLOOR(RAND() * 10) + 1),
+    (FLOOR(RAND() * 10) + 1, FLOOR(RAND() * 10) + 1),
+    (FLOOR(RAND() * 10) + 1, FLOOR(RAND() * 10) + 1),
+    (FLOOR(RAND() * 10) + 1, FLOOR(RAND() * 10) + 1),
+    (FLOOR(RAND() * 10) + 1, FLOOR(RAND() * 10) + 1),
+    (FLOOR(RAND() * 10) +1, FLOOR(RAND() * 10) + 1),
+    (FLOOR(RAND() * 10) + 1, FLOOR(RAND() * 10) + 1),
+    (FLOOR(RAND() * 10) + 1, FLOOR(RAND() * 10) + 1),
+    (FLOOR(RAND() * 10) + 1, FLOOR(RAND() * 10) + 1),
+    (FLOOR(RAND() * 10) + 1, FLOOR(RAND() * 10) + 1);
+
+INSERT INTO sponsor_equipe_nationale (sponsors_id, equipe_nationales_id) 
+VALUES 
+    (FLOOR(RAND() * 10) +1, FLOOR(RAND() * 10) + 1),
+    (FLOOR(RAND() * 10) + 1, FLOOR(RAND() * 10) + 1),
+    (FLOOR(RAND() * 10) + 1, FLOOR(RAND() * 10) + 1),
+    (FLOOR(RAND() * 10) + 1, FLOOR(RAND() * 10) + 1),
+    (FLOOR(RAND() * 10) + 1, FLOOR(RAND() * 10) + 1),
+    (FLOOR(RAND() * 10) +1, FLOOR(RAND() * 10) + 1),
+    (FLOOR(RAND() * 10) + 1, FLOOR(RAND() * 10) + 1),
+    (FLOOR(RAND() * 10) + 1, FLOOR(RAND() * 10) + 1),
+    (FLOOR(RAND() * 10) + 1, FLOOR(RAND() * 10) + 1),
+    (FLOOR(RAND() * 10) + 1, FLOOR(RAND() * 10) + 1);
+
+INSERT INTO joueur (date_naissance, nom, prenom, taille, club_id, equipe_nationale_id) VALUES
+    ('1963-02-17', 'Jordan', 'Michael', 198, 1, 1),
+    ('1984-12-30', 'James', 'LeBron', 206, 1, 1),
+    ('1988-09-29', 'Durant', 'Kevin', 208, 3, 1),
+    ('1988-03-14', 'Curry', 'Stephen', 191, 2, 1),
+    ('1994-03-16', 'Embiid', 'Joel', 213, 10, 1),
+    ('1999-02-28', 'Dončić', 'Luka', 201, 7, 1),
+    ('1995-02-19', 'Jokić', 'Nikola', 208, 11, 2),
+    ('1998-03-03', 'Tatum', 'Jayson', 203, 7, 1),
+    ('1996-09-07', 'Mitchell', 'Donovan', 190, 7, 1),
+    ('1980-07-06', 'Gasol', 'Pau', 215, 12, 2),
+    ('1978-06-19', 'Nowitzki', 'Dirk', 213, 11, 8),
+    ('1982-05-17', 'Parker', 'Tony', 188, 13, 3),
+    ('1977-07-28', 'Ginóbili', 'Manu', 198, 14, 6),
+    ('1989-04-18', 'Bogdanović', 'Bojan', 206, 15, 6),
+    ('1980-04-30', 'Scola', 'Luis', 206, 13, 6),
+    ('1998-07-28', 'Ntilikina', 'Frank', 198, 11, 3),
+    ('1988-12-14', 'Batum', 'Nicolas', 203, 13, 3),
+    ('1992-08-18', 'Bogdanović', 'Bogdan', 198, 12, 2),
+    ('1992-06-26', 'Gobert', 'Rudy', 216, 11, 3);
+
+INSERT INTO game (date, equipe1, equipe2, gagnant, coupe_id, ligue_id_ligue)
+VALUES
+    ('2023-01-01', 'France', 'Espagne', 'France', 1, NULL),
+    ('2021-01-01', 'États-Unis', 'Argentine', 'États-Unis', 3, NULL),
+    ('2019-01-01', 'États-Unis', 'Canada', 'États-Unis', 3, NULL),
+    ('2022-01-01', 'États-Unis', 'France', 'États-Unis', 7, NULL),
+    ('2018-01-01', 'États-Unis', 'Canada', 'Canada', 12, NULL),
+    ('2022-01-01', 'États-Unis', 'France', 'États-Unis', 8, NULL),
+    ('2018-01-01', 'États-Unis', 'Canada', 'Canada', 13, NULL),
+    ('2022-01-01', 'États-Unis', 'Espagne', 'États-Unis', 9, NULL),
+    ('2023-01-01', 'Los Angeles Lakers', 'Golden State Warriors', 'Los Angeles Lakers', NULL, 1),
+    ('2023-01-01', 'Los Angeles Lakers', 'Brooklyn Nets', 'Los Angeles Lakers', NULL, 2),
+    ('2022-01-01', 'Real Madrid Baloncesto', 'FC Barcelona Bàsquet', 'FC Barcelona Bàsquet', NULL, 4),
+    ('2022-01-01', 'Boston Celtics', 'Brooklyn Nets', 'Brooklyn Nets', NULL, 3),
+    ('2022-01-01', 'Real Madrid Baloncesto', 'FC Barcelona Bàsquet', 'Real Madrid Baloncesto', NULL, 6);
+
+insert into coupe_equipe_nationale(coupes_id,equipe_nationales_id) select game.coupe_id , equipe_nationale.id from game join equipe_nationale on game.equipe1=equipe_nationale.nom_equipe_national or game.equipe2=equipe_nationale.nom_equipe_national;
+
+
+select joueur.num_joueur , coupe.* , joueur_game.pourcentage_tire_libre from joueur join joueur_game on joueur.num_joueur = joueur_game.joueur_num_joueur join game on game.id = joueur_game.game_id join coupe on coupe.id = game.coupe_id where coupe.type_coupe ="Championnat" and coupe.annee = "2023" and coupe.phase="Finale" order by joueur_game.pourcentage_tire_libre DESC limit 3;
+
+INSERT INTO club_ligue (clubs_id, ligues_id_ligue)
+SELECT DISTINCT club.id, game.ligue_id_ligue
+FROM game
+JOIN club ON game.equipe1 = club.nom_club OR game.equipe2 = club.nom_club;
+
+INSERT INTO joueur_game ( pourcentage_tire_2pts, pourcentage_tire_3pts,pourcentage_tire_assistance,pourcentage_tire_blocage, pourcentage_tire_libre, pourcentage_tire_succes,game_id, joueur_num_joueur)
+SELECT 
+    
+    FLOOR(RAND() * 30) + 60 as pourcentage_tire_2pts, -- Valeurs entre 60 et 90
+    FLOOR(RAND() * 20) + 30 as pourcentage_tire_3pts, -- Valeurs entre 30 et 50
+    FLOOR(RAND() * 30) + 20 as pourcentage_tire_assistance, -- Valeurs entre 20 et 50
+    FLOOR(RAND() * 10) as pourcentage_tire_blocage, -- Valeurs entre 0 et 10
+    FLOOR(RAND() * 15) + 75 as pourcentage_tire_libre, -- Valeurs entre 75 et 90
+    FLOOR(RAND() * 25) + 50 as pourcentage_tire_succes, -- Valeurs entre 50 et 75
+    
+    idGame,
+    idJoueur
+    
+FROM (
+	SELECT 10 as idGame, 1 as idJoueur UNION ALL
+    SELECT 10, 2 UNION ALL
+    SELECT 9, 1 UNION ALL
+    SELECT 9, 2 UNION ALL
+    SELECT 9, 4 UNION ALL
+    SELECT 12, 3 UNION ALL
+    SELECT 10, 3 UNION ALL
+    SELECT 12, 6 UNION ALL
+    SELECT 12, 8 UNION ALL
+    SELECT 12, 9 UNION ALL
+    SELECT 13, 7 UNION ALL
+    SELECT 13, 11 UNION ALL
+    SELECT 13, 16 UNION ALL
+    SELECT 13, 19 UNION ALL
+    SELECT 11, 7 UNION ALL
+    SELECT 11, 11 UNION ALL
+    SELECT 11, 16 UNION ALL
+    SELECT 11, 19 UNION ALL
+    SELECT 13, 10 UNION ALL
+    SELECT 13, 18 UNION ALL
+    SELECT 11, 10 UNION ALL
+    SELECT 11, 18
+) AS data;
+
+INSERT INTO joueur_game ( pourcentage_tire_2pts, pourcentage_tire_3pts,pourcentage_tire_assistance,pourcentage_tire_blocage, pourcentage_tire_libre, pourcentage_tire_succes,game_id, joueur_num_joueur)
+SELECT 
+    
+    FLOOR(RAND() * 30) + 60 as pourcentage_tire_2pts, -- Valeurs entre 60 et 90
+    FLOOR(RAND() * 20) + 30 as pourcentage_tire_3pts, -- Valeurs entre 30 et 50
+    FLOOR(RAND() * 30) + 20 as pourcentage_tire_assistance, -- Valeurs entre 20 et 50
+    FLOOR(RAND() * 10) as pourcentage_tire_blocage, -- Valeurs entre 0 et 10
+    FLOOR(RAND() * 15) + 75 as pourcentage_tire_libre, -- Valeurs entre 75 et 90
+    FLOOR(RAND() * 25) + 50 as pourcentage_tire_succes, -- Valeurs entre 50 et 75
+    
+    idGame,
+    idJoueur
+    
+FROM (
+	SELECT 14 as idGame, 7 as idJoueur UNION ALL
+    SELECT 14, 10 UNION ALL
+    SELECT 14, 18 UNION ALL
+    SELECT 14, 12 UNION ALL
+    SELECT 14, 16 UNION ALL
+    SELECT 14, 17 UNION ALL
+    SELECT 14, 19 
+    
+) AS data;
+
+INSERT INTO joueur_game ( pourcentage_tire_2pts, pourcentage_tire_3pts,pourcentage_tire_assistance,pourcentage_tire_blocage, pourcentage_tire_libre, pourcentage_tire_succes,game_id, joueur_num_joueur)
+SELECT 
+    
+    FLOOR(RAND() * 10) + 60 as pourcentage_tire_2pts, 
+    FLOOR(RAND() * 30) + 30 as pourcentage_tire_3pts, 
+    FLOOR(RAND() * 20) + 20 as pourcentage_tire_assistance, 
+    FLOOR(RAND() * 40) as pourcentage_tire_blocage, 
+    FLOOR(RAND() * 15) + 55 as pourcentage_tire_libre, 
+    FLOOR(RAND() * 25) + 30 as pourcentage_tire_succes, 
+    
+    idGame,
+    idJoueur
+    
+FROM (
+	SELECT 1 as idGame, 12 as idJoueur UNION ALL
+    SELECT 1, 16 UNION ALL
+    SELECT 1, 17 UNION ALL
+    SELECT 1, 19 UNION ALL
+    SELECT 1, 7 UNION ALL
+    SELECT 1, 10 UNION ALL
+    SELECT 1, 18 UNION ALL
+    SELECT 2, 13 UNION ALL
+    SELECT 2, 14 UNION ALL
+    SELECT 2, 15 UNION ALL
+    SELECT 2, 1 UNION ALL
+    SELECT 2, 2 UNION ALL
+    SELECT 2, 3 UNION ALL
+    SELECT 2, 4 UNION ALL
+    SELECT 2, 5 UNION ALL
+    SELECT 2, 6 UNION ALL
+    SELECT 2, 8 UNION ALL
+    SELECT 2, 9 UNION ALL
+    SELECT 3, 1 UNION ALL
+    SELECT 3, 2 UNION ALL
+    SELECT 3, 3 UNION ALL
+    SELECT 3, 4 UNION ALL
+    SELECT 3, 5 UNION ALL
+    SELECT 3, 6 UNION ALL
+    SELECT 3, 8 UNION ALL
+    SELECT 3, 9 UNION ALL
+    SELECT 4, 12 UNION ALL
+    SELECT 4, 16 UNION ALL
+    SELECT 4, 17 UNION ALL
+    SELECT 4, 19 UNION ALL
+    SELECT 4, 1 UNION ALL
+    SELECT 4, 2 UNION ALL
+    SELECT 4, 3 UNION ALL
+    SELECT 4, 4 UNION ALL
+    SELECT 4, 5 UNION ALL
+    SELECT 4, 6 UNION ALL
+    SELECT 4, 8 UNION ALL
+    SELECT 4, 9 UNION ALL
+    SELECT 5, 1 UNION ALL
+    SELECT 5, 2 UNION ALL
+    SELECT 5, 3 UNION ALL
+    SELECT 5, 4 UNION ALL
+    SELECT 5, 5 UNION ALL
+    SELECT 5, 6 UNION ALL
+    SELECT 5, 8 UNION ALL
+    SELECT 5, 9 UNION ALL
+    SELECT 6, 12 UNION ALL
+    SELECT 6, 16 UNION ALL
+    SELECT 6, 17 UNION ALL
+    SELECT 6, 19 UNION ALL
+    SELECT 6, 1 UNION ALL
+    SELECT 6, 2 UNION ALL
+    SELECT 6, 3 UNION ALL
+    SELECT 6, 4 UNION ALL
+    SELECT 6, 5 UNION ALL
+    SELECT 6, 6 UNION ALL
+    SELECT 6, 8 UNION ALL
+    SELECT 6, 9 UNION ALL
+    SELECT 7, 1 UNION ALL
+    SELECT 7, 2 UNION ALL
+    SELECT 7, 3 UNION ALL
+    SELECT 7, 4 UNION ALL
+    SELECT 7, 5 UNION ALL
+    SELECT 7, 6 UNION ALL
+    SELECT 7, 8 UNION ALL
+    SELECT 7, 9 UNION ALL
+    SELECT 8, 7 UNION ALL
+    SELECT 8, 10 UNION ALL
+    SELECT 8, 18 UNION ALL
+    SELECT 8, 1 UNION ALL
+    SELECT 8, 2 UNION ALL
+    SELECT 8, 3 UNION ALL
+    SELECT 8, 4 UNION ALL
+    SELECT 8, 5 UNION ALL
+    SELECT 8, 6 UNION ALL
+    SELECT 8, 8 UNION ALL
+    SELECT 8, 9
+) AS data;
